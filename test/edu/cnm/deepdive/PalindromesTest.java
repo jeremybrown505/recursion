@@ -14,6 +14,7 @@ class PalindromesTest {
     assertFalse(Palindromes.testRecursive("abb"));
     assertTrue(Palindromes.testRecursive("x"));
     assertTrue(Palindromes.testRecursive(""));
-
   }
+  @Test
+
 }

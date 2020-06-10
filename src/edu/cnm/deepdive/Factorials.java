@@ -23,7 +23,7 @@ public class Factorials {
    return result;
   }
 
-  public static BigInteger computeIterative(int n) throws IllegalArgumentException {
+  public static BigInteger computeIteratative(int n) throws IllegalArgumentException {
     BigInteger result;
     if (n < 0) {
       throw new IllegalArgumentException();
