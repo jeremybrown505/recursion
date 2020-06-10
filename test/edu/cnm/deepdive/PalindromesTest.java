@@ -10,6 +10,10 @@ class PalindromesTest {
   void testRecursive() {
     assertTrue(Palindromes.testRecursive("radar"));
     assertFalse(Palindromes.testRecursive("sonar"));
+    assertTrue(Palindromes.testRecursive("abba"));
+    assertFalse(Palindromes.testRecursive("abb"));
+    assertTrue(Palindromes.testRecursive("x"));
+    assertTrue(Palindromes.testRecursive(""));
 
   }
 }
