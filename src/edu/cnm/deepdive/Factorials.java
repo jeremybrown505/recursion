@@ -22,4 +22,17 @@ public class Factorials {
    }
    return result;
   }
+
+  public static BigInteger computeIterative(int n) throws IllegalArgumentException {
+    BigInteger result;
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    if (n == 0) {
+      result = BigInteger.valueOf(1);
+    }else {
+      result = BigInteger.valueOf(n - 1);
+    }
+    return result;
+  }
 }

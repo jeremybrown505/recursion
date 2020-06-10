@@ -26,4 +26,14 @@ class FactorialsTest {
     }
     assertThrows(IllegalArgumentException.class, () -> Factorials.computeRecursive(-1));
   }
+  void computeIterative() {
+    for (long[] testCase : testCases) {
+      int n = (int) testCase[0];
+      long expected = testCase[1];
+      BigInteger actual = Factorials.computeRecursive(n);
+      assertEquals(expected, actual);
+    }
+    assertThrows(IllegalArgumentException.class, () -> Factorials.computeRecursive(-1));
+
+  }
 }
